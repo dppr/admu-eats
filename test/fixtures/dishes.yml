@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  combo_p: 9.99
+  solo_p: 9.99
+  likes: 1
+  stall_id: 1
+
+two:
+  name: MyString
+  combo_p: 9.99
+  solo_p: 9.99
+  likes: 1
+  stall_id: 1

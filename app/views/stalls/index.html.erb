@@ -1,0 +1,32 @@
+<style>
+  h1,body{color:black;}
+  td,th{padding-right: 10px;}
+</style>
+<body>
+  <p id="notice"><%= notice %></p>
+
+  <h1>Explore</h1>
+  <table class="table table-bordered table-striped">
+    <thead>
+      <tr>
+        <th>JSEC Stall</th>
+        <th>Description</th>
+        <th colspan="2">Actions</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <% @stalls.each do |stall| %>
+        <tr>
+          <td class="tddishes"><%= link_to stall.name, stall %></td>
+          <td class="tddishes"><%= stall.description %></td>
+          <td class="tddishes"><%= link_to ' Edit ', edit_stall_path(stall) %></td class="tddishes">
+          <td class="tddishes"><%= link_to ' Destroy', stall, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+  <br>
+  <%= link_to 'Add a Stall', new_stall_path %> |
+  <%= link_to 'See Full Dish Listing', dishes_path %>
+<body>

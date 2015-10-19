@@ -1,0 +1,209 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+@import "bootstrap-sprockets";
+@import "bootstrap";
+@import url(http://fonts.googleapis.com/css?family=Raleway);
+
+body {
+    line-height: 1.6em;
+    width: 100%;
+    max-width: 100%;
+    font-family: 'Raleway', sans-serif;
+}
+
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+    color: #fff;
+}
+a:hover{background-color: transparent}
+
+.autocrop{ object-fit:cover;}
+
+.navbar {
+   background-color: transparent;
+   background: transparent;
+   border-color: transparent;
+}
+.scroll{
+    overflow-y: scroll;
+    height: 400px;
+}
+.bodytables{
+    display: block;
+}
+#th1
+{
+    width: 177px;
+}
+#th2
+{
+    width: 167px;
+}
+#th3
+{
+    width: 168px;
+}
+#th4
+{
+    width: 162px;
+}
+#th5
+{
+    width: 173px;
+}
+#th6
+{
+    width: 505px;
+}
+.tddishes{
+    width:200px;
+}
+#index_head, #index_start, #index_contact {
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    min-height: 700px;
+}
+
+
+#index-title {
+    margin-top: 7em;
+    z-index:11;
+}
+
+#title-text {
+    font-size: 7em;
+}
+
+#title-sub {
+    color:rgba(255,255,255, 0.8);
+}
+#header{
+
+}
+#index_head {
+    background-color: #000;
+    background-image: url(/assets/bg.jpg);
+    position:relative;
+    background-attachment: fixed;
+}
+
+#index_start {
+    padding-top: 80px;
+    background-image: url(/assets/bgabout.jpg);
+    position:relative;
+    background-attachment: fixed;
+}
+#index_contact {
+    padding: 80px;
+    background-image: url(/assets/bgcontact.jpg);
+    position:relative;
+    background-attachment: fixed;
+}
+#index_btn{
+    z-index: 11;
+}
+#about1{
+    z-index: 11;
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0,0,0,0.6);
+    z-index: 10;
+}
+.overlay1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(226,226,226,0.5);
+    z-index: 10;
+}
+.body-card {
+    padding: 5%;
+    text-align: justify;
+    text-justify:interword;
+}
+.btn-ghost {
+    border: 3px solid #fff;
+    color: #fff;
+    font-size: 1.5em;
+    background-color: transparent;
+    padding: 15px 35px 15px 35px;
+    margin-top: 25px;
+    cursor: pointer;
+    border-radius: 3px;
+    transition: all .2s linear;
+}
+
+.card, .cardx{
+    background-color:white;
+    -webkit-box-shadow: 4px 6px 5px -3px rgba(92,92,92,1);
+    -moz-box-shadow: 4px 6px 5px -3px rgba(92,92,92,1);
+    box-shadow: 4px 6px 5px -3px rgba(92,92,92,1);
+    min-height: 536px;
+    color: black;
+}
+.fade:hover {
+   opacity: 1;
+   transition: opacity .25s ease-in-out;
+   -moz-transition: opacity .25s ease-in-out;
+   -webkit-transition: opacity .25s ease-in-out;
+ }
+.fade {
+  opacity: 0.7;
+}
+.blink_me {
+    -webkit-animation-name: blinker;
+    -webkit-animation-duration: 1.2s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+
+    -moz-animation-name: blinker;
+    -moz-animation-duration: 1.2s;
+    -moz-animation-timing-function: linear;
+    -moz-animation-iteration-count: infinite;
+
+    animation-name: blinker;
+    animation-duration: 1.2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@-moz-keyframes blinker {  
+    0% { opacity: 1.0; }
+    50% { opacity: 0.0; }
+    100% { opacity: 1.0; }
+}
+
+@-webkit-keyframes blinker {  
+    0% { opacity: 1.0; }
+    50% { opacity: 0.0; }
+    100% { opacity: 1.0; }
+}
+
+@keyframes blinker {  
+    0% { opacity: 1.0; }
+    50% { opacity: 0.0; }
+    100% { opacity: 1.0; }
+}

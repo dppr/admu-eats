@@ -1,0 +1,55 @@
+<style>
+  h1,body{color:black;}
+</style>
+<body>
+	<h1><%= @stall.name %> Menu</h1>
+
+	<style>
+  h1,body{color:black;}
+  .hide{display:none;}
+</style>
+<body>
+  <%= form_for(@dish) do |f| %>
+    <% if @dish.errors.any? %>
+      <div id="error_explanation">
+        <h2><%= pluralize(@dish.errors.count, "error") %> prohibited this dish from being saved:</h2>
+
+        <ul>
+        <% @dish.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+        </ul>
+      </div>
+    <% end %>
+
+    <div class="field">
+      <%= f.label :name %><br>
+      <%= f.text_field :name %>
+    </div>
+    <div class="field">
+      <%= f.label :combo_p %><br>
+      <%= f.text_field :combo_p %>
+    </div>
+    <div class="field">
+      <%= f.label :solo_p %><br>
+      <%= f.text_field :solo_p %>
+    </div>
+    <div class="field">
+      <%= f.label :likes %><br>
+      <%= f.number_field :likes %>
+    </div>
+    <div class="field hide">
+      <%= f.label :stall_id, "stall id" %><br>
+      
+      <%= f.text_field :stall_id, :value=>@stall.id,readonly:true %>
+    </div>
+    <div class="actions">
+      <%= f.submit %>
+    </div>
+  <% end %>
+</body>
+
+
+	<%= link_to 'Back', dishes_path %>
+
+</body>

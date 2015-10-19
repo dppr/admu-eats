@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>ADMU EATS</title>
+
+    <!-- Bootstrap -->
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+
+
+    <section id="index_head" class="row slide" data-autoheight="true">
+      <div class="overlay"></div>
+      <div class="col-xs-12 title">
+        <center>
+          <div class="col-xs-10 col-xs-offset-1" id="index-title">
+                <img id="header" src="/assets/header.png" class="img-responsive">
+                <div class="row">
+                  <div class="col-lg-4"></div>
+                  <div class="col-lg-4">
+                    <div class="input-group">
+                      <span class="input-group-btn">
+                        <button class="btn btn-default" type="button">Go!</button>
+                      </span>
+                      <input type="text" class="form-control" placeholder="Search for...">
+                    </div> <!-- /input-group -->
+                  </div> <!-- /.col-lg-4 -->
+                </div> <!-- /.row -->
+          </div>
+        </center>
+        <div id="index_btn" class="col-xs-12 col-xs-offset-2 body-form" >
+            <button type="button" href="#index_start" class="btn-ghost fade page-scroll">About</button>
+            <button type="button" href="#index_start" class="btn-ghost fade">Ranks</button>
+            <%=link_to stalls_path do %>
+              <button class="btn-ghost fade">Explore</button>
+            <%end%>
+            <button type="button" href="#index_start" class="btn-ghost fade">I'm Feeling Hungry!</button>
+            <button type="button" href="#index_contact" class="btn-ghost fade page-scroll">Contact Us</button>
+          </div>
+      </div>
+    </section><!--end hero-->
+
+  <section id="index_start" class="row" data-autoheight="true">
+    <div class="overlay1"></div>
+    <div id="about1" class="col-xs-12 " >
+      <div class="container">
+      <div class="col-xs-3">
+        <div class="card">
+          <img src="http://placehold.it/300x300" class="img-responsive">
+          <div class="body-card">
+            <h4>
+            CINDY CHUA
+            </h4>
+            <p>
+            Cindy likes to eat rice and chicken.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-xs-3">
+        <div class="card">
+          <img src="http://placehold.it/300x300" class="img-responsive">
+          <div class="body-card">
+            <h4>
+            ENZO BAUTISTA
+            </h4>
+            <p>
+            Enzo likes to eat rice and chicken.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-xs-3">
+        <div class="card">
+          <img src="http://placehold.it/300x300" class="img-responsive">
+          <div class="body-card">
+            <h4>
+            JAKEY FAUSTO
+            </h4>
+            <p>
+            Jakey likes to eat rice and chicken.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-xs-3">
+        <div class="card">
+          <img src="http://placehold.it/300x300" class="img-responsive">
+          <div class="body-card">
+            <h4>
+            VAUGHN VILLARICO
+            </h4>
+            <p>
+            Vaughn likes to eat rice and chicken.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    </div>
+
+  </section><!--end hero-->
+
+
+  <section id="index_contact" class="row" data-autoheight="true">
+    <div id="about1" class="col-xs-12 " >
+      <div class="container">
+      <div class="col-xs-4"></div>
+        <div class="col-xs-4">
+          <div class="card">
+            <img src="http://placehold.it/400x300" class="img-responsive">
+            <div class="body-card">
+              <h4>
+              Send us an Email :)
+              </h4>
+              <div class="row">
+                <div class="col-lg-1"></div>
+                <div class="col-lg-5">
+                    <form>
+                      <fieldset>
+                        <input type="text" id="name" name="name" class="input-block-level" placeholder="Name">
+                        <input type="text" id="email" name="email" class="input-block-level" placeholder="Email">
+                        <textarea rows="3" id="description" name="description" class="input-block-level" placeholder="Description">
+                        </textarea>
+                          <button type="submit" class="btn btn-warning pull-right">Submit
+                          </button>
+                      </fieldset>
+                    </form>
+                </div><!-- /.col-lg-6 -->
+              </div><!-- /.row -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> 
+
+  </section><!--end hero-->
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="javascripts/bootstrap.min.js"></script>
+
+    <script src="javascripts/jquery.easing.min.js"></script>
+    <script src="javascripts/main.js"></script>
+  </body>
+</html>

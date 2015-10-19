@@ -1,0 +1,51 @@
+<style>
+  h1,body{color:black;}
+  td,th{padding-right: 10px;}
+</style>
+<body>
+	<p id="notice"><%= notice %></p>
+
+	<p>
+	  <strong>Name:</strong>
+	  <%= @stall.name %>
+	</p>
+
+	<p>
+	  <strong>Description:</strong>
+	  <%= @stall.description %>
+	</p>
+	 <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Combo Price</th>
+        <th>Solo Price</th>
+        <th>Likes</th>
+        <th>Stall</th>
+        <th colspan="3"></th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <% @stall.dishes.each do |dish| %>
+        <tr>
+          <td><%= dish.name %></td>
+          <td><%= dish.combo_p %></td>
+          <td><%= dish.solo_p %></td>
+          <td><%= dish.likes %></td>
+          <td><%= link_to 'Show', dish %></td>
+          <td><%= link_to 'Edit', edit_dish_path(dish) %></td>
+          <td><%= link_to 'Destroy', dish, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+
+
+
+	<%= link_to 'Edit', edit_stall_path(@stall) %> |
+	<%= link_to 'Back to Explore', stalls_path %>
+	<br>
+	<%= link_to 'Add Dish', new_stall_dish_path(@stall.id) %>
+
+</body>
