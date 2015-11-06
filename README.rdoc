@@ -1,4 +1,5 @@
 == EATS
 
-A universal university food guide by Dipper: Enzo Bautista, Cindy Chua, Jakey Fausto, and Vaughn Villarico
+A universal university food guide by Dipper: Enzo Bautista, Cindy Chua, Jakey Fausto, and Vaughn Villarico.
+
 
